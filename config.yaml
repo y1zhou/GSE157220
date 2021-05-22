@@ -1,8 +1,5 @@
-# Path to sheet describing meta-information for each cell.
-# The first column has to contain the cell id, all other columns are optional.
-# They are added as metadata to the SingleCellExperiment object created in the
-# workflow.
-cells: cells.tsv
+# Project ID of the study in the SRA database
+srp_id: SRP279492
 
 counts:
   # specify count table (rows: genes/transcripts/spikes, cols: cells)
