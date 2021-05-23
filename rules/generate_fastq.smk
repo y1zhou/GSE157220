@@ -8,10 +8,9 @@ rule bamtofastq_bin:
 
 rule bam_to_fastq:
     input:
-        "data/bam/{srr_id}.bam",
-        b2f_bin=config["bamtofastq"]
+        "data/bam/{srr_id}.bam"
     output:
         directory("data/fastq/{srr_id}")
-    threads: 20
+    threads: 5
     shell:
-        "{input.b2f_bin} --nthreads {threads} {input} {output}"
+        "{config[bamtofastq]} --nthreads {threads} {input} {output}"
