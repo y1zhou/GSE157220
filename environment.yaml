@@ -7,3 +7,6 @@ dependencies:
   - fastqc=0.11.9
   - pysradb=1.0.1
   - snakemake=6.4.0
+  - r-base=4.0.5
+  - r-essentials=4.0
+  - r-devtools=2.4.1
